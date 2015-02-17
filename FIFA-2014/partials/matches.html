@@ -1,0 +1,24 @@
+<div class="container" ng-controller="matchesController">
+	<div ng-repeat="namelist in names"> 
+		<div class="col-md-4 col-lg-4">
+			<div class="panel panel-info" style="margin-top:50px">
+				<div class="panel panel-heading">Match Results</div>
+				<ul class="countries">
+					<li>
+						<img src="images/{{namelist.home_team.code | limitTo:2 | lowercase}}.png">
+						{{namelist.home_team.country}}
+					</li>
+						<h4 class="text-left" style="color:blue;padding-left:35px;">VS</h4>
+					<li>
+						<img src="images/{{namelist.away_team.code | limitTo:2 | lowercase}}.png">
+						{{namelist.away_team.country}}
+					</li>
+				</ul>
+				<hr>
+				<p class="result">Result : <span>{{namelist.home_team.goals}}-{{namelist.away_team.goals}}</span></p>
+				<p class="winner">Winner:<span>{{namelist.winner}}</span></p>
+			</div>
+
+		</div>
+	</div>
+</div>

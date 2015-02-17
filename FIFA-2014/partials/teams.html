@@ -1,0 +1,15 @@
+<div class="container" ng-controller="teamsController">
+	<ul class="countryGroups col-xs-12 col-sm-12 col-md-6 col-lg-6" ng-repeat="(key,value) in teams | groupBy:'group_id'" >
+		<div class="panel panel-default ">
+			<div class="panel-heading">
+				<h3>Group - {{key}}	</h3>
+			</div>
+			<div class="panel-body">
+				<li ng-repeat="namelist in value" class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+					<img src="images/{{namelist.fifa_code | limitTo:2 | lowercase}}.png"> 
+					<p>{{namelist.country}}</p>
+				</li>
+			</div>
+		</div>
+	</ul>
+</div>

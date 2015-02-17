@@ -1,0 +1,27 @@
+.panel-heading{
+	text-align: center;
+}
+
+.countries li{
+	display: inline-block;
+	padding:0 30px;
+	width:270px;
+	height: 50px;
+}
+
+.result{
+	text-align: center;
+}
+
+.winner{
+	text-align: center;
+}
+
+/* ------------- end matches.html ----------- */
+
+.countryGroups li{
+	display: inline-block;
+}
+
+
+/* ----------------- end teams.html ---------------*/
